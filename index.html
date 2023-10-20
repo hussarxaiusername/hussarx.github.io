@@ -13,11 +13,15 @@
             text-align: center;
             position: relative;
             overflow: hidden;
+            display: flex; /* Use flexbox to center vertically */
+            align-items: center; /* Center vertically */
+            justify-content: center; /* Center horizontally */
+            min-height: 100vh; /* Ensure full viewport height */
         }
 
         img {
             width: 100%;
-            height: 100vh;
+            height: 100%;
             object-fit: cover;
             position: fixed;
             top: 0;
@@ -26,10 +30,7 @@
         }
 
         .coming-soon {
-            position: absolute;
-            top: 50%; /* Center vertically */
-            left: 50%;
-            transform: translate(-50%, -50%);
+            position: relative; /* Adjust positioning */
             font-size: 36px;
             z-index: 1;
         }
@@ -37,8 +38,6 @@
 </head>
 <body>
     <img src="background.jpg" alt="Background Image">
-    <!-- Add content here to make the page scrollable -->
-    <div style="height: 100vh;"></div>
     <div class="coming-soon">
         <h1>Coming Soon</h1>
         <p>Q1 2024</p>
