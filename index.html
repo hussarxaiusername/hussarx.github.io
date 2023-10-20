@@ -11,10 +11,15 @@
             font-family: Arial, sans-serif;
             color: #ffffff;
             text-align: center;
-            background-image: url('background.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed; /* Ensures the background doesn't scroll with content */
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
         }
 
         .coming-soon {
@@ -27,6 +32,7 @@
     </style>
 </head>
 <body>
+    <img src="background.jpg" alt="Background Image" class="background">
     <div class="coming-soon">
         <h1>Coming Soon</h1>
         <p>Q1 2024</p>
